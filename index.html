@@ -262,6 +262,49 @@
       .copy:hover,.padlet:hover,.source:hover,.mobile-menu-toggle:hover,.top.show:hover{transform:none!important}
     }
 
+    /* ===== Padlet button size enhancement ===== */
+    .padlet{
+      width:100%;
+      min-height:88px;
+      padding:18px 18px;
+      gap:15px;
+      border-radius:22px;
+      font-size:20px;
+      line-height:1.25;
+    }
+    .padlet-logo{
+      flex:0 0 54px;
+      width:54px;
+      height:54px;
+      border-radius:16px;
+    }
+    .padlet-logo img{
+      width:46px !important;
+      height:46px !important;
+    }
+    .padlet > span:not(.padlet-logo){
+      flex:1 1 auto;
+      min-width:0;
+      font-size:20px;
+      font-weight:900;
+    }
+    .padlet small{
+      margin-top:4px;
+      font-size:14px;
+      line-height:1.35;
+    }
+    .padlet::after{
+      font-size:24px;
+      flex:0 0 auto;
+    }
+    @media(max-width:1050px){
+      .padlet{min-height:82px;padding:16px 17px;font-size:18px}
+      .padlet-logo{flex-basis:50px;width:50px;height:50px}
+      .padlet-logo img{width:42px !important;height:42px !important}
+      .padlet > span:not(.padlet-logo){font-size:18px}
+      .padlet small{font-size:13px}
+    }
+
 </style>
 </head>
 <body>
